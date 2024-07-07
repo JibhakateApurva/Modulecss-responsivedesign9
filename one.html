@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+    <style>
+        body{
+            /* background-color: black; */
+        }
+        .navbar{
+            background-color: rgb(39, 36, 36);
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        img[alt="logo"] {
+            width: 40px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        img[alt="smalllogo"] {
+            width: 40px;
+            padding: 5px 10px;
+            margin-left: 10px;
+        
+        }
+        
+        .large{
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .small{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(39, 36, 36);
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        button{
+            background-color: rgba(72, 72, 245, 0.726);
+            color: aliceblue;
+            padding: 7px 25px;
+            margin: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        .two{
+            margin-bottom: 20px;
+        }
+        @media screen and (min-width:800px) {
+            .large{
+                display: flex;
+            }
+            .small{
+            display: none;
+            }   
+        }
+        
+       
+
+        .fa{
+            margin-right: 20px;
+            color: aliceblue;
+         }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="large">
+            <div class="one">
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+            </div>
+            <div class="two">
+                <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a><a href="#">Contact</a>
+            </div>
+            <div class="three">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="small">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="smalllogo">
+            <i style="font-size:24px" class="fa">&#xf0c9;</i>
+        </div>
+    </div>
+
+</body>
+</html>

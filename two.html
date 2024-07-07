@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        
+        .navbar{
+            background-color: rgb(39, 36, 36);
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        img[alt="logo"] {
+            width: 40px;
+            padding: 5px 10px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+        }
+        img[alt="smalllogo"] {
+            width: 40px;
+            padding: 5px 10px;
+            margin-left: 10px;
+        
+        }
+        
+        .large{
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .small{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: rgb(39, 36, 36);
+            height: 50px;
+            width: 100%;
+            border: 1px solid black;
+        }
+        button{
+            background-color: rgba(72, 72, 245, 0.726);
+            color: aliceblue;
+            padding: 7px 25px;
+            margin: 10px;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 4px;
+        }
+        a{
+            text-decoration: none;
+            padding: 10px;
+            color: white;
+        }
+        .two{
+            margin-bottom: 20px;
+        }
+        
+        
+        .fa{
+            margin-right: 20px;
+            color: aliceblue;
+        }
+        .main{
+            display: flex;
+
+        }
+        .text-section > img {
+            width: 60%;
+            
+        }
+
+        video{
+            width: 50%;
+            height: 90vh;
+        }
+        .text-section{
+            margin: 100px 60px 70px 90px;
+        }
+        .text-section >h3{
+           font-size: 2rem; 
+           margin-bottom: 0;
+        }
+        .text-section >h1{
+            font-size: 4rem;
+            color: rgb(68, 68, 245);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .text-section >h6{
+            color: rgb(118, 118, 236);
+            font-size: 1.2rem;
+            margin-top: 15px;
+        }
+        .text-section >p{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgba(0, 0, 0, 0.863);
+            font-size: 1rem;
+        }
+        @media screen and (min-width:800px) {
+            .large{
+                display: flex;
+            }
+            .small{
+            display: none;
+            } 
+             
+        }
+
+        @media screen and (max-width:800px) {
+            .main{
+                display: flex;
+                flex-direction: column;
+            }
+            video{
+                width: 100%;
+            }
+            .text-section{
+                margin-left: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="large">
+            <div class="one">
+                <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="logo">
+            </div>
+            <div class="two">
+                <a href="#">Home</a><a href="#">Blog</a><a href="#">About</a><a href="#">Contact</a>
+            </div>
+            <div class="three">
+                <button>Login</button>
+            </div>
+        </div>
+        <div class="small">
+            <img src="https://cdn.logo.com/hotlink-ok/logo-social-sq.png" alt="smalllogo">
+            <i style="font-size:24px" class="fa">&#xf0c9;</i>
+        </div>
+    </div>
+    <div class="main">
+        <div class="text-section">
+            <h3>Say Hi To</h3>
+            <h1>One Card</h1>
+            <h6>Co-branded Card Issuers :</h6>
+            <img src="https://www.getonecard.app/images/legal/Banking_partners_24thJan_dark__.png" alt="bank">
+            <p>India's best metal credit card. Built with full-stack tech. Backed by
+                the principles of simplicity, transparency, and giving back control to
+                the user.
+            </p>
+        </div>
+        <video loop autoplay="autoplay" controls>
+            <source src="./say_hi_2x_d3_.mp4" type="video/mp4"/>
+        </video>
+    </div>
+</body>
+</html>
